@@ -83,7 +83,7 @@ $metas = Controller::getMetas($_GET['cod']);
 							</div>
 
 							<div class="col-lg-4">
-								<label for="valor">Valor Total Estimnado:</label>
+								<label for="valor">Valor Total Estimado:</label>
 								<input type="text" class="form-control" name="valor" id="valor<?php echo $meta->id?>" value="<?php echo isset($meta)? Controller::getValor($meta->valor):'';?>" onblur="update(<?php echo $meta->id;?>)" onkeyup="formatoValor(this.id)" required>
 							</div>								  
 
