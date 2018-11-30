@@ -22,7 +22,7 @@
 </head>
 <body>
 <div id="formulario">
-<center><h2>Plano de Metas Institucional 2018</h2></center>
+<center><h2>Plano de Metas Institucional 2019</h2></center>
 <div>
 <?php 
 	$setor = Controller::getSetor($_GET['cod']);
