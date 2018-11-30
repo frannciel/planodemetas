@@ -89,7 +89,6 @@ function update(meta){
 			'cod': cod,
 		},
 		success: function(response) {
-			console.log(JSON.parse(response));
 			response = JSON.parse(response);
 			$('#Lcategoria'+meta).text(response[0]);
 			$('#Lprioridade'+meta).text(response[1]);
@@ -97,7 +96,7 @@ function update(meta){
 			$('#orcamentario').val(response[2]);
 			$('#norcamentario').val(response[3]);
 			$('#total').val(response[4]);
-			alert("Meta alterada com  sucesso !!");
+	
 		},
 		error: function(){
 			alert("Erro ao tentar alterada sua meta, contacte o Administrador");
