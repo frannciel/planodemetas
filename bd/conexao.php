@@ -12,17 +12,11 @@ class Conexao {
         try{
             if (!isset(self::$instance)) {
 
-                $server     = 'localhost';
-                $username   = 'root';
-                $password   = '';
-                $dbname     = 'pmi';
-
-
-                /*$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+                $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
                 $server = $url["host"];
                 $username = $url["user"];
                 $password = $url["pass"];
-                $dbname  = substr($url["path"], 1);*/
+                $dbname  = substr($url["path"], 1);
 
                 self::$instance = new PDO('mysql:host='.$server, $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
