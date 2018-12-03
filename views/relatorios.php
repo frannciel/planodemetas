@@ -8,10 +8,10 @@ $orcamentario = 0;
 $dados = Controller::getMetas(getPost("setor"), getPost("ordem"), getPost("categoria"));
 $setores = Controller::getSetores();
 foreach ($dados as $dado) {
-	if ($dado->recurso = '0') {
+	if ($dado->recurso == '0') {
 		$orcamentario += $dado->valor;
 	}
-	if ($dado->recurso = '1') {
+	if ($dado->recurso == '1') {
 		$norcamentario += $dado->valor;
 	}
 }
