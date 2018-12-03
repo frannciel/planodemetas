@@ -47,7 +47,7 @@ class Controller {
     public static function getMetas(){
     	self::setConexao();
     	$param = func_get_args(0);
-        $query = "SELECT setores.id as setor_id, setores.nome as setor_nome, metas.id, metas.descricao, metas.categoria, metas.prazo, metas.prioridade, metas.quantidade, metas.recurso, metas.valor 
+        $query = "SELECT setores.id as setor_id, setores.nome as setor_nome, metas.id, metas.descricao, metas.observacao, metas.categoria, metas.prazo, metas.prioridade, metas.quantidade, metas.recurso, metas.valor 
        	FROM metas INNER JOIN setores ON metas.setor_id = setores.id";
 
         if ((isset($param[0]) && $param[0] != "") || (isset($param[2]) &&  $param[2] != "")) {

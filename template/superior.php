@@ -36,6 +36,11 @@
 		body{
 			background: #66CDAA;	
 		}
+		.alerta{
+			position: fixed;
+			display: none;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>

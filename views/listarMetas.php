@@ -15,5 +15,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="col-lg-2">
+		<div class="alert alert-success sombra alerta" role="alert" id="sucesso">
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			Salvo com Sucesso
+		</div>
+		<div class="alert alert-danger sombra alerta" role="alert" id="error">
+			<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+			Falha ao Salvar
+		</div>
+	</div>
+
 </div>
+
 <?php require dirname(__FILE__).'/../template/inferior.php';?>

@@ -96,10 +96,12 @@ function update(meta){
 			$('#orcamentario').val(response[2]);
 			$('#norcamentario').val(response[3]);
 			$('#total').val(response[4]);
-	
+			$('#sucesso').css('display', 'block');
+			setTimeout(function(){ $('#sucesso').css('display', 'none'); },4000);
 		},
-		error: function(){
-			alert("Erro ao tentar alterada sua meta, contacte o Administrador");
+		error: function(qXHR, textStatus, errorThrown){
+			$('#error').css('display', 'block');
+			setTimeout(function(){ $('#error').css('display', 'none'); },4000);
 		}
 	});
 }
