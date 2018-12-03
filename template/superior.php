@@ -30,6 +30,9 @@
 			margin-top: 50px;
 			margin-bottom: 50px;
 		}
+		.meta{
+			background:#FFF8DC;
+		}
 		body{
 			background: #66CDAA;	
 		}

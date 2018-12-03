@@ -29,21 +29,48 @@ class Controller {
         $delete->execute(['id' => $metaId]);
     }
 
-    public static function getTodasMetas(){
-        self::setConexao();
-        $sql = self::$PDO->query("SELECT * FROM metas");
-        return $sql->fetchAll(PDO::FETCH_OBJ);
-    }
-
+    /**
+     * Gets the setores.
+     *
+     * @return     <Object>  The setores.
+     */
     public static function getSetores(){
         self::setConexao();
         $sql = self::$PDO->query("SELECT * FROM setores");
         return $sql->fetchAll(PDO::FETCH_OBJ);
     }
+  	/**
+  	 * Gets the todas metas.
+  	 *
+  	 * @return     <Array>  The todas metas.
+  	 */
+    public static function getMetas(){
+    	self::setConexao();
+    	$param = func_get_args(0);
+        $query = "SELECT setores.id as setor_id, setores.nome as setor_nome, metas.id, metas.descricao, metas.categoria, metas.prazo, metas.prioridade, metas.quantidade, metas.recurso, metas.valor 
+       	FROM metas INNER JOIN setores ON metas.setor_id = setores.id";
 
-    public static function getMetas($setorId){
-        self::setConexao();
-        $sql = self::$PDO->query("SELECT * FROM metas WHERE setor_id ='".$setorId."' ORDER BY categoria");
+        if ((isset($param[0]) && $param[0] != "") || (isset($param[2]) &&  $param[2] != "")) {
+        	$query .= " WHERE ";
+        }
+
+        if (isset($param[2]) && $param[2] != "") {
+        	$query .= "categoria = '".$param[2]."'";
+        }
+
+        if (isset($param[0], $param[2]) && $param[0] != "" && $param[2] != "") {
+        	$query .= " AND ";
+        }
+
+        if (isset($param[0]) && $param[0] != "") {
+        	$query .= "setor_id = '".$param[0]."'";
+        }
+
+        if (isset($param[1]) && $param[1] != "") {
+        	$query .= " ORDER BY ".$param[1];
+        }
+        
+        $sql = self::$PDO->query($query);
         return $sql->fetchAll(PDO::FETCH_OBJ);
     }
 
