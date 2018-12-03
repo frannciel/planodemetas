@@ -119,8 +119,6 @@ $metas = Controller::getMetas($_GET['cod']);
 		<a type="button" class="btn  btn-success btn-block botao" href="../index.php">Voltar</a>
 	</div>
 	<div class="col-lg-6">
-		<a type="button" class="btn btn-success btn-block botao" id="novaMeta" href="novaMeta.php?cod=<?php echo $_GET['cod']; ?>">
-			<span class="glyphicon  glyphicon-pencil" aria-hidden="true"></span> Nova Meta
-		</a>
+		<a type="button" class="btn btn-success btn-block botao" id="novaMeta" href="novaMeta.php?cod=<?php echo $_GET['cod']; ?>">Nova Meta</a>
 	</div>
 </div>
