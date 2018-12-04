@@ -25,13 +25,15 @@
 		#tabela-body {
 			background: #fff;
 		}
+		#relatorio-num{
+			vertical-align: top;
+			text-align: center;
+			font-weight: bolder;
+		}
 		.sombra{
 			box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06), 0 2px 5px 0 rgba(0,0,0,0.2);
 			margin-top: 50px;
 			margin-bottom: 50px;
-		}
-		.meta{
-			background:#FFF8DC;
 		}
 		body{
 			background: #66CDAA;	

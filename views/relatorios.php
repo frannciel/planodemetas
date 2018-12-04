@@ -2,19 +2,11 @@
 require_once dirname(__FILE__).'/../controller.php';
 require dirname(__FILE__).'/../template/superior.php'; 
 
-$numero = 1;
+$numero =0;
 $norcamentario = 0;
 $orcamentario = 0;
 $dados = Controller::getMetas(getPost("setor"), getPost("ordem"), getPost("categoria"));
 $setores = Controller::getSetores();
-foreach ($dados as $dado) {
-	if ($dado->recurso == '0') {
-		$orcamentario += $dado->valor;
-	}
-	if ($dado->recurso == '1') {
-		$norcamentario += $dado->valor;
-	}
-}
 
 function getPost($valor) {
     return isset($_POST[$valor]) ? $_POST[$valor] : '';
@@ -83,31 +75,36 @@ function getPost($valor) {
 					<tbody>
 						<?php if (empty($dados)) { ?>
 							<tr><td><center><i>NEMHUMA META ENCONTRADA DE ACORDO COM OS PARAMETROS INFOMRADOS</i></center></td></tr>
-				
-						<?php } else { foreach ($dados as $dado) { ?>
+						<?php } else { 
+						foreach ($dados as $dado) {
+							if ($dado->recurso == '0') {$orcamentario += $dado->valor;}
+							if ($dado->recurso == '1') {$norcamentario += $dado->valor;}
+							$numero += 1; 
+						?>
 						<tr>
 							<td>
-								<table  width=100% >
-									<tr>
-										<td colspan="3"><b><?php echo strtoupper($dado->setor_nome); ?></b></td>
+								<table width="100%">
+									<tr">
+										<td rowspan="4" id="relatorio-num"><?php echo$numero; ?> </td> 
+										<td colspan="3" class="col-lg-12"><strong><?php echo strtoupper($dado->setor_nome);?></strong></td>
 									</tr>
 									<tr>
-										<td>CATEGORIA:<?php echo Controller::getCategoria($dado->categoria); ?> </td>
-										<td>EXECUÇÃO: <?php echo Controller::getPrazo($dado->prazo); ?> </td>
-										<td>PRIORIDADE: <?php echo Controller::getPrioridade($dado->prioridade);?></td>
+										<td class="col-lg-5">CATEGORIA:<?php echo Controller::getCategoria($dado->categoria);?> </td>
+										<td class="col-lg-3">EXECUÇÃO: <?php echo Controller::getPrazo($dado->prazo);?> </td>
+										<td class="col-lg-3">PRIORIDADE: <?php echo Controller::getPrioridade($dado->prioridade);?></td>
 									</tr>
 									<tr >			
-										<td>QUANTIDADE: <?php echo $dado->quantidade; ?></td>
-										<td>RECURSO: <?php echo Controller::getRecurso($dado->recurso);?></td>
-										<td>VALOR:<?php echo Controller::getValor($dado->valor);?></td>
+										<td class="col-lg-5">QUANTIDADE: <?php echo $dado->quantidade;?></td>
+										<td class="col-lg-3">RECURSO: <?php echo Controller::getRecurso($dado->recurso);?></td>
+										<td class="col-lg-3">VALOR:<?php echo Controller::getValor($dado->valor);?></td>
 									</tr>
-									<tr class="meta">
-										<td colspan="3" ><?php echo nl2br($dado->descricao); ?></b>
+									<tr>
+										<td colspan="3" class="col-lg-12" bgcolor="#FFF8DC"><?php echo nl2br($dado->descricao);?></td>
 									</tr>
 								</table>
 							</td>
 						</tr>
-						<?php $numero += 1; }  ?>
+						<?php }  ?>
 					<?php } ?>
 					</tbody>
 				</table>
