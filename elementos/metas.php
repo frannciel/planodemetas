@@ -12,7 +12,7 @@ $metas = Controller::getMetas($_GET['cod']);
 			<div class='panel panel-default'>
 				<div class='panel-heading' role='tab' id='headingOne'>
 					<div class='row' >
-						<span style="corsor: pointer" data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
+						<span style="cursor: pointer" data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
 							<div class='col-lg-1'>
 								<img alt="Brand" src="../img/icon-down.png"  class="img-responsive" />
 							</div>
