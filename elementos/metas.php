@@ -12,18 +12,20 @@ $metas = Controller::getMetas($_GET['cod']);
 			<div class='panel panel-default'>
 				<div class='panel-heading' role='tab' id='headingOne'>
 					<div class='row' >
-						<div class='col-lg-1' data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
-							<img alt="Brand" src="../img/icon-down.png"  class="img-responsive" />
-						</div>
-						<div class='col-lg-4' data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
-							Categoria: <label id="Lcategoria<?php echo $meta->id?>"><?php echo Controller::getCategoria($meta->categoria);?></label>
-						</div>
-						<div class='col-lg-3' data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
-							Prioridade: <label id="Lprioridade<?php echo $meta->id?>"><?php echo Controller::getPrioridade($meta->prioridade);?></label>
-						</div>
-						<div class='col-lg-3'data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
-							Valor: <label id="Lvalor<?php echo $meta->id?>"><?php echo number_format($meta->valor,2,",",".");?></label>
-						</div>
+						<span style="corsor: pointer" data-toggle='collapse' data-parent='#accordion' href='#collapse<?php echo $meta->id;?>' aria-expanded='true' aria-controls='collapseOne'>
+							<div class='col-lg-1'>
+								<img alt="Brand" src="../img/icon-down.png"  class="img-responsive" />
+							</div>
+							<div class='col-lg-4'>
+								Categoria: <label id="Lcategoria<?php echo $meta->id?>"><?php echo Controller::getCategoria($meta->categoria);?></label>
+							</div>
+							<div class='col-lg-3'>
+								Prioridade: <label id="Lprioridade<?php echo $meta->id?>"><?php echo Controller::getPrioridade($meta->prioridade);?></label>
+							</div>
+							<div class='col-lg-3' >
+								Valor: <label id="Lvalor<?php echo $meta->id?>"><?php echo number_format($meta->valor,2,",",".");?></label>
+							</div>
+						</span>
 						<div class='col-lg-1' title='Deletar Meta'>	
 							<a type="button" class="btn btn-danger btn-sm" href="../deletar.php?cod=<?php echo $meta->id;?> &amp setor=<?php echo$_GET['cod'];?>">
 								<span class='glyphicon glyphicon-trash' aria-hidden='true'></span>
