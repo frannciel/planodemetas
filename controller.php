@@ -43,7 +43,7 @@ class Controller {
 
     public static function getMetas($setorId){
         self::setConexao();
-        $sql = self::$PDO->query("SELECT * FROM metas WHERE setor_id ='".$setorId."' ORDER BY categoria");
+        $sql = self::$PDO->query("SELECT * FROM metas WHERE setor_id ='".$setorId."' AND data > '2019-11-18 00:00:00' ORDER BY categoria");
         return $sql->fetchAll(PDO::FETCH_OBJ);
     }
 
