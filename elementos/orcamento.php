@@ -20,27 +20,27 @@
 				<tr>
 					<td></td>
 					<td>Acervo</td>
-					<td>19.750,00</td> 
+					<td>0,00</td> 
 				</tr>
 				<tr>
 					<td></td>
 					<td>Estrutura Física</td>
-					<td>0,00</td>
+					<td>250.000,00 **</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Equipamentos, Moveis e Veículos</td>
-					<td>70.000,00</td>
+					<td>226.469,53 **</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Gestão Organizacional*</td>
-					<td>2.937.238,52</td>
+					<td>2.577.117,68</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Informatização</td>
-					<td>50.300,00 </td>
+					<td>25.360,00</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -50,7 +50,17 @@
 				<tr>
 					<td></td>
 					<td>Recursos Humanos</td>
-					<td>25.000,00</td>
+					<td>40.000,00</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> - Capacitação</td>
+					<td>10.000,00</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> - Qualificação</td>
+					<td>30.000,00</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -59,7 +69,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">PESQUISA</td>
-					<td>45.000,00</td>
+					<td>20.000,00</td>
 				</tr>
 				<tr>
 					<td colspan="2">EXTENSÃO</td>
@@ -72,7 +82,7 @@
 				<tr>
 					<td></td>
 					<td>Assistência Estudantil</td>
-					<td>1.227.400,11</td>
+					<td>1.151.533,32</td>
 				</tr>
 				<tr>
 					<td></td>
