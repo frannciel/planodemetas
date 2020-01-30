@@ -45,7 +45,7 @@
 				<tr>
 					<td></td>
 					<td>Materiais</td>
-					<td>60.000,00</td>
+					<td>249.114,20</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -96,21 +96,21 @@
 				</tr>
 				<tr>
 					<td colspan="2"><b>ORÇAMENTO TOTAL</b></td>
-					<td>4.290.480,53</td>
+					<td>4.539.597,73</td>
 				</tr>
 				<tr>
 					<td colspan="2"><b>Orçamentário</b></td>
-					<td>4.438.688,63</td>
+					<td>4.063.125,20</td>
 				</tr>
 				<tr>
-					<td colspan="2"><b>Extra Orçamentário/b></td>
+					<td colspan="2"><b>Extra Orçamentário</b></td>
 					<td>476.469,53</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 	<div class="panel-footer">
-		<p><sup>1</sup> Valor extra orçamentário</p>
+		<p><sup>1</sup> <b>Valor extra orçamentário</b></p>
 		<p><sup>2</sup> <b>Gestão Organizacional</b> representa as despesas básicas do <i>Campus</i> tais como: Água, Energia, Telefone, Segurança, Limpeza e etc.</p>
 	</div>
 </div><!-- panel -->
