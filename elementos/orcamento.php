@@ -25,16 +25,16 @@
 				<tr>
 					<td></td>
 					<td>Estrutura Física</td>
-					<td>250.000,00 **</td>
+					<td>250.000,00<sup>1</sup></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Equipamentos, Moveis e Veículos</td>
-					<td>226.469,53 **</td>
+					<td>226.469,53<sup>1</sup></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td>Gestão Organizacional*</td>
+					<td>Gestão Organizacional<sup>2</sup></td>
 					<td>2.577.117,68</td>
 				</tr>
 				<tr>
@@ -49,7 +49,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td>Recursos Humanos</td>
+					<td><b>Recursos Humanos</b></td>
 					<td>40.000,00</td>
 				</tr>
 				<tr>
@@ -77,12 +77,17 @@
 				</tr>
 				<tr>
 					<td colspan="2">ENSINO</td>
-					<td>1.227.400,11</td>
+					<td>1.151.533,32</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td>Assistência Estudantil</td>
+					<td><b>Assistência Estudantil<b></td>
 					<td>1.151.533,32</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> - Almoxarifado Social</td>
+					<td>28.063,70</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -91,12 +96,21 @@
 				</tr>
 				<tr>
 					<td colspan="2"><b>ORÇAMENTO TOTAL</b></td>
+					<td>4.290.480,53</td>
+				</tr>
+				<tr>
+					<td colspan="2"><b>Orçamentário</b></td>
 					<td>4.438.688,63</td>
+				</tr>
+				<tr>
+					<td colspan="2"><b>Extra Orçamentário/b></td>
+					<td>476.469,53</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 	<div class="panel-footer">
-		<p>* <b>Gestão Organizacional</b> representa as despesas básicas do <i>Campus</i> tais como: Água, Energia, Telefone, Segurança, Limpeza e etc.</p>
+		<p><sup>1</sup> Valor extra orçamentário</p>
+		<p><sup>2</sup> <b>Gestão Organizacional</b> representa as despesas básicas do <i>Campus</i> tais como: Água, Energia, Telefone, Segurança, Limpeza e etc.</p>
 	</div>
 </div><!-- panel -->
