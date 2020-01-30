@@ -96,7 +96,7 @@
 				</tr>
 				<tr>
 					<td colspan="2"><b>ORÇAMENTO TOTAL</b></td>
-					<td>4.539.597,73</td>
+					<td><b>4.539.597,73</b></td>
 				</tr>
 				<tr>
 					<td colspan="2">Orçamentário</td>
