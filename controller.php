@@ -16,9 +16,9 @@ class Controller {
 
     public static function getTotal($setorId){
         self::setConexao();
-        $sql = self::$PDO->query("SELECT SUM(valor) as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 0");
+        $sql = self::$PDO->query("SELECT SUM(valor) as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 0 AND metas.data > '2020-01-01 00:00:00'");
         $total1 = $sql->fetch(PDO::FETCH_OBJ);
-        $sql = self::$PDO->query("SELECT SUM(valor)  as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 1");
+        $sql = self::$PDO->query("SELECT SUM(valor)  as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 1 AND metas.data > '2020-01-01 00:00:00'");
         $total2= $sql->fetch(PDO::FETCH_OBJ);
         return array($total1, $total2);
     }
@@ -46,7 +46,7 @@ class Controller {
   	 */
     public static function getMetas(){
     	self::setConexao();
-    	$param = func_get_args();/*
+    	$param = func_get_args();
         $query = "SELECT setores.id as setor_id, setores.nome as setor_nome, metas.id, metas.descricao, metas.observacao, metas.categoria, metas.prazo, metas.prioridade, metas.quantidade, metas.recurso, metas.valor 
        	FROM metas INNER JOIN setores ON metas.setor_id = setores.id";
 
@@ -65,14 +65,16 @@ class Controller {
         if (isset($param[0]) && $param[0] != "") {
         	$query .= "setor_id = '".$param[0]."'";
         }
+        
+        $query .= "AND metas.data > '2020-01-01 00:00:00'";
 
         if (isset($param[1]) && $param[1] != "") {
         	$query .= " ORDER BY ".$param[1];
         }
         
         $sql = self::$PDO->query($query);
-        return $sql->fetchAll(PDO::FETCH_OBJ);*/
-        var_dump($param);
+        return $sql->fetchAll(PDO::FETCH_OBJ);
+
     }
 
     public static function getSetor($id){
