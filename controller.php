@@ -46,7 +46,7 @@ class Controller {
   	 */
     public static function getMetas(){
     	self::setConexao();
-    	$param = func_get_args(0);
+    	$param = func_get_args(0);/*
         $query = "SELECT setores.id as setor_id, setores.nome as setor_nome, metas.id, metas.descricao, metas.observacao, metas.categoria, metas.prazo, metas.prioridade, metas.quantidade, metas.recurso, metas.valor 
        	FROM metas INNER JOIN setores ON metas.setor_id = setores.id";
 
@@ -71,7 +71,8 @@ class Controller {
         }
         
         $sql = self::$PDO->query($query);
-        return $sql->fetchAll(PDO::FETCH_OBJ);
+        return $sql->fetchAll(PDO::FETCH_OBJ);*/
+        var_dump($param);
     }
 
     public static function getSetor($id){
