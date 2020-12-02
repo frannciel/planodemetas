@@ -3,7 +3,7 @@
 	<div class="col-lg-10">
 		<div class="panel panel-default sombra">
 			<div class="panel-heading">
-				<center><h1>PLANO DE METAS INSTITUCIONAL 2020</h1></center>
+				<center><h1>PLANO DE METAS INSTITUCIONAL 2021</h1></center>
 			</div><!-- painel-heading -->
 
 			<div class="panel-body">
