@@ -100,7 +100,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">Orçamentário</td>
-					<td>4.063.125,20</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td colspan="2">Extra Orçamentário (Emendas)</td>
