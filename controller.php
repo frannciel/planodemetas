@@ -66,7 +66,7 @@ class Controller {
         	$query .= "setor_id = '".$param[0]."'";
         }
         
-        $query .= " AND metas.data > '2020-01-01 00:00:00'";
+        $query .= " AND metas.data > '2020-12-01 00:00:00'";
 
         if (isset($param[1]) && $param[1] != "") {
         	$query .= " ORDER BY ".$param[1];
