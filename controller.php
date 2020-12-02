@@ -16,9 +16,9 @@ class Controller {
 
     public static function getTotal($setorId){
         self::setConexao();
-        $sql = self::$PDO->query("SELECT SUM(valor) as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 0 AND metas.data > '2020-01-01 00:00:00'");
+        $sql = self::$PDO->query("SELECT SUM(valor) as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 0 AND metas.data > '2020-12-01 00:00:00'");
         $total1 = $sql->fetch(PDO::FETCH_OBJ);
-        $sql = self::$PDO->query("SELECT SUM(valor)  as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 1 AND metas.data > '2020-01-01 00:00:00'");
+        $sql = self::$PDO->query("SELECT SUM(valor)  as valor FROM metas WHERE setor_id ='".$setorId."' AND recurso = 1 AND metas.data > '2020-12-01 00:00:00'");
         $total2= $sql->fetch(PDO::FETCH_OBJ);
         return array($total1, $total2);
     }
