@@ -6,7 +6,7 @@ require dirname(__FILE__).'/template/superior.php';
 	<div class="col-md-8">
 		<div class="panel panel-default sombra">
 			<div class="panel-heading">
-				<center><h1>PLANO DE METAS 2020</h1></center>
+				<center><h1>PLANO DE METAS 2021</h1></center>
 			</div><!-- painel-heading -->
 
 			<div class="panel-body">
