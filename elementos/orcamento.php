@@ -15,7 +15,7 @@
 			<tbody>
 				<tr>
 					<td colspan="2">GESTÃO</td>
-					<td>3.368.061,41</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -25,42 +25,42 @@
 				<tr>
 					<td></td>
 					<td>Estrutura Física</td>
-					<td>250.000,00<sup>1</sup></td>
+					<td>0,00<sup>1</sup></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Equipamentos, Moveis e Veículos</td>
-					<td>226.469,53<sup>1</sup></td>
+					<td>0,00<sup>1</sup></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Gestão Organizacional<sup>2</sup></td>
-					<td>2.577.117,68</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Informatização</td>
-					<td>25.360,00</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td>Materiais</td>
-					<td>249.114,20</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td><b>Recursos Humanos</b></td>
-					<td>40.000,00</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td> - Capacitação</td>
-					<td>10.000,00</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td> - Qualificação</td>
-					<td>30.000,00</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -69,7 +69,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">PESQUISA</td>
-					<td>20.000,00</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td colspan="2">EXTENSÃO</td>
@@ -77,17 +77,17 @@
 				</tr>
 				<tr>
 					<td colspan="2">ENSINO</td>
-					<td>1.151.533,32</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td><b>Assistência Estudantil<b></td>
-					<td>1.151.533,32</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td> - Almoxarifado Social</td>
-					<td>28.063,70</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -96,7 +96,7 @@
 				</tr>
 				<tr>
 					<td colspan="2"><b>ORÇAMENTO TOTAL</b></td>
-					<td><b>4.539.597,73</b></td>
+					<td><b>0,00</b></td>
 				</tr>
 				<tr>
 					<td colspan="2">Orçamentário</td>
@@ -104,11 +104,11 @@
 				</tr>
 				<tr>
 					<td colspan="2">Extra Orçamentário (Emendas)</td>
-					<td>150.000,00</td>
+					<td>0,00</td>
 				</tr>
 				<tr>
 					<td colspan="2">Não Orçamentário</td>
-					<td>326.496,53</td>
+					<td>0,00</td>
 				</tr>
 			</tbody>
 		</table>
