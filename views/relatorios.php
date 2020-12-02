@@ -14,7 +14,7 @@ function getPost($valor) {
 ?>
 <div class="panel panel-default sombra">
 	<div class="panel-heading">
-		<center><h2>PLANO DE METAS INSTITUCIONAL 2019</h2></center>
+		<center><h2>PLANO DE METAS INSTITUCIONAL 2021</h2></center>
 	</div><!-- painel-heading -->
 
 	<div class="panel-body">
